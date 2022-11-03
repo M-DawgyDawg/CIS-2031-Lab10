@@ -33,26 +33,10 @@ void prepend(List* &list, string val){
 //This function removes the first item from the list
 void removeFirst(List* &list){
     //❓ Lab Question 9
-    //YOUR CODE HERE
+    dinner = dinner->next;
+    delete turnip;
 }
 
-//This function returns true if the list haystck
-//contains the value needle, and false otherwise.
-bool contains(List* haystack, string needle){
-    //❓ Lab Question 10
-    //YOUR CODE HERE
-    return false;
-}
-
-void insertAt(List* &list, int pos, string value){
-    //❓ Lab Question 11
-    //YOUR CODE HERE
-}
-
-void deleteAt(List* &list, int pos, string value){
-    //❓ Lab Question 11
-    //YOUR CODE HERE
-}
 
 void main(){
     //Create an empty list and print it
@@ -71,8 +55,7 @@ void main(){
 
     // YOUR CODE TO REMOVE TURNIPS HERE:
     List* turnip = dinner;
-    dinner = dinner->next;
-    delete turnip;
+    removeFirst(dinner);
     printList(dinner);
 
     //❓ Lab Question 10
