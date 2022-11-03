@@ -5,6 +5,7 @@ using std::string;
 using std::endl;
 
 
+
 struct List {
     string value;
     List* next;  
@@ -42,9 +43,11 @@ void removeFirst(List* &list){
 //This function returns true if the list haystck
 //contains the value needle, and false otherwise.
 bool contains(List* haystack, string needle){
-    //❓ Lab Question 10
-    //YOUR CODE HERE
-    return false;
+    if (haystack.contains(needle)){
+        return true;
+    } else{
+        return false;
+    }
 }
 
 void insertAt(List* &list, int pos, string value){
